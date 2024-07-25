@@ -1,8 +1,0 @@
-@font-face {
-  font-family: 'FontTittle';
-  src: url('/assets/retro_couture');
-}
-
-h1 {
-  font-family: FontTitle;
-}

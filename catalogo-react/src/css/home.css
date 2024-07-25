@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'FontTittle';
+    src: url('/assets/retro_couture.woff2') format('woff2'),
+         url('/assets/retro_couture.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Aplicar la fuente a h1 */
+  .h1Style {
+    font-family: 'FontTittle', sans-serif;
+  }

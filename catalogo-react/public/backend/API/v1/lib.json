@@ -1,5 +1,5 @@
 {
-    "artists": [
+    "albums": [
         {
             "id": 1,
             "image": "https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72",
@@ -12,7 +12,7 @@
         },
         {
             "id": 2,
-            "image": "",
+            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fopen.spotify.com%2Falbum%2F2d9BCZeAAhiZWPpbX9aPCW&psig=AOvVaw2tcD08yOvIsClccHy3PFLo&ust=1721977873685000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOC7qs3RwYcDFQAAAAAdAAAAABAE",
             "name": "El Último Tour Del Mundo",
             "name_artist": "Bad Bunny",
             "album_date": "2020-11-27",

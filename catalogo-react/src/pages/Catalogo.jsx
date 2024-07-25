@@ -1,10 +1,13 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
+import { ModoOscuroContext } from '../Layout'
 
 
 const Catalogo = () => {
 
-    const [errorData, setErrorData] = useState("")
+    const {tema, setTema, nombre} = useContext(ModoOscuroContext)
+
     const [albumsPerPage, setAlbumsPerPage] = useState(8)
+    const [albumsFilter, setAlbumsFilter] = useState([])
     const [albums, setAlbums] = useState([])
     const [filter, setFilter] = useState("")
     const [buttonFilterGenre, setButtonFilterGenre] = useState("All")
@@ -14,115 +17,88 @@ const Catalogo = () => {
     })
 
     useEffect(() => {
-        getAlbums("./")
+        getAlbums("/public/backend/API/v1/lib.json")
+        console.log(albums)
     }, [])
 
     const getAlbums = async (url) => {
         const respuesta = await fetch(url)
         const objeto = await respuesta.json()
-
-        if (objeto.error) {
-            setErrorData("No hay resultados")
-            setAlbums([])
-            setInfo({})
-            return;
-        } else {
-            setErrorData("")
-            setAlbums(objeto.results)
-            setInfo(objeto.info)
-        }
-
+        setAlbums(objeto.albums)
+        setAlbumsFilter(objeto.albums)
     }
 
-    const handleFilterByName = (e) => {
+    const handleFilterByArtistName = (e) => {
         const string = e.target.value;
         setFilter(string);
         console.log(string)
         if (string.trim().length > 3) {
-            getAlbums(`/catalogo-react/public/lib.json/?name=${string.trim()}`)
+            getAlbums(`/lib.json`)
         }
     }
-
-    const handleFilterByGenre = (e) => {
-        const string = e.target.value;
-        setFilter(string)
-        console.log(string)
-        if (string.trim().length > 3) {
-            getAlbums(`/catalogo-react/public/lib.json/?genre=${string.trim()}`)
-        }
-    }
-
-    const handleCombinedFilter = (e) => {
-        const string = e.target.value;
-        setValue(string);
-
-
-        handleFilterByGenre(string);
-        handleFilterByName(string);
-    };
 
     const handleFilterByGenreButton = (genre) => {
-        setButtonFilterGenre(genre)
-        if (genre === "All") {
-            getAlbums("/catalogo-react/public/lib.json")
-        } else {
-            getAlbums(`/catalogo-react/public/lib.json/?genre=${genre}`)
-        }
+        const albumGenre = (albums => albums.genre = 18)
+        setAlbumsFilter()
     }
 
-    const filteredAlbums = buttonFilter === "All"
+    const filteredAlbums = buttonFilterGenre === "All"
         ? albums
-        : albums.filter(album => album.genre.toLowerCase() === buttonFilter.toLowerCase())
+        : albums.filter(albums => albums.genre.toLowerCase() === buttonFilterGenre.toLowerCase())
 
 
     return (
         <main>
+            <h1>catalogo ({tema} - {nombre})</h1>
             <section className='catalogContainer'>
                 <div className="filterBlock">
                     <div className="buttonBlock">
-                        <button className={`${buttonFilterGenre == "Pop" ? "btnA" : ""}`} onClick={() => handleFilterByGenre("Pop")}>Pop</button>
-                        <button className={`${buttonFilterGenre == "Rock" ? "btnA" : ""}`} onClick={() => handleFilterByGenre("Pop")}>Pop</button>
-                        <button className={`${buttonFilterGenre == "Latin" ? "btnA" : ""}`} onClick={() => handleFilterByGenre("Pop")}>Pop</button>
-                        <button className={`${buttonFilterGenre == "Hip-Hop" ? "btnA" : ""}`} onClick={() => handleFilterByGenre("Pop")}>Pop</button>
+                        <button className={`${filteredAlbums == "All" ? "btnA" : ""}`} onClick={() => handleFilterByGenreButton("All")}>All</button>
+                        <button className={`${filteredAlbums == "Rock" ? "btnA" : ""}`} onClick={() => handleFilterByGenreButton("Rock")}>Rock</button>
+                        <button className={`${filteredAlbums == "Latin" ? "btnA" : ""}`} onClick={() => handleFilterByGenreButton("Latin")}>Latin</button>
+                        <button className={`${filteredAlbums == "Hip-Hop" ? "btnA" : ""}`} onClick={() => handleFilterByGenreButton("Hip-Hop")}>Hip-Hop</button>
+                        <button className={`${filteredAlbums == "Pop" ? "btnA" : ""}`} onClick={() => handleFilterByGenreButton("Pop")}>Pop</button>
+
                     </div>
                     <div className="searchbarBlock">
                         <input type="text"
-                            onChange={handleCombinedFilter}
+
+                            onChange={handleFilterByArtistName}
                             placeholder='¿Que te gustaría escuchar? (4 chars)'
                             style={{ width: "400px" }}
                             value={filter}
+
                         />
                         {filter}
 
                         <button className='x' style={{}} onClick={
                             () => {
                                 setFilter("")
-                                getAlbums("/catalogo-react/public/lib.json")
+                                getAlbums("/lib.json")
                             }
                         }>x</button>
                     </div>
                 </div>
 
                 <div className="albumCatalog">
-                    {errorData && <div>{errorData}</div>}
                     {
-                        albums.map((albums, index) => <AlbumCard key={album.id} {...album} index={index} />
-                        );
-                        }
+                        albums.map((album, index) => <AlbumCard key={album.id} {...album} index={index} />
+                        )
+                    }
                 </div>
             </section>
         </main>
     );
 }
 
-const AlbumCard = ({ image, name, name_artist, album_date, times_played, likes, genre}) => {
+const AlbumCard = ({ image, name, name_artist, album_date, times_played, likes, genre }) => {
     return (
         <article className="Card">
             <img src={image} alt={name} />
             <h3>{name}</h3>
-            <p>{nameArtist}</p>
-            <p>{albumDate}</p>
-            <p>{timesPlayed}</p>
+            <p>{name_artist}</p>
+            <p>{album_date}</p>
+            <p>{times_played}</p>
             <p>{likes}</p>
             <p>{genre}</p>
         </article>

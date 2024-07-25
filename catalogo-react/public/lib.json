@@ -4,141 +4,181 @@
             "id": 1,
             "image": "https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72",
             "name": "Un Verano Sin Ti",
-            "name-artist": "Bad Bunny",
-            "album-date": "2022-05-06",
-            "times-played": "2,000,000",
-            "likes": "1,500,000"
+            "name_artist": "Bad Bunny",
+            "album_date": "2022-05-06",
+            "times_played": "2,000,000",
+            "likes": "1,500,000",
+            "genre": "Reggaeton"
         },
         {
             "id": 2,
             "image": "",
             "name": "El Último Tour Del Mundo",
-            "name-artist": "Bad Bunny",
-            "album-date": "2020-11-27",
-            "times-played": "1,800,000",
-            "likes": "1,300,000"
+            "name_artist": "Bad Bunny",
+            "album_date": "2020-11-27",
+            "times_played": "1,800,000",
+            "likes": "1,300,000",
+            "genre": "Trap"
         },
         {
             "id": 3,
             "image": "",
             "name": "KG0516",
-            "name-artist": "Karol G",
-            "album-date": "2021-03-25",
-            "times-played": "1,500,000",
-            "likes": "1,200,000"
+            "name_artist": "Karol G",
+            "album_date": "2021-03-25",
+            "times_played": "1,500,000",
+            "likes": "1,200,000",
+            "genre": "Reggaeton"
         },
         {
             "id": 4,
             "image": "",
             "name": "Nattividad",
-            "name-artist": "Natti Natasha",
-            "album-date": "2021-09-24",
-            "times-played": "1,200,000",
-            "likes": "900,000"
+            "name_artist": "Natti Natasha",
+            "album_date": "2021-09-24",
+            "times_played": "1,200,000",
+            "likes": "900,000",
+            "genre": "Latin Pop"
         },
         {
             "id": 5,
             "image": "",
             "name": "Vice Versa",
-            "name-artist": "Rauw Alejandro",
-            "album-date": "2021-06-25",
-            "times-played": "1,700,000",
-            "likes": "1,100,000"
+            "name_artist": "Rauw Alejandro",
+            "album_date": "2021-06-25",
+            "times_played": "1,700,000",
+            "likes": "1,100,000",
+            "genre": "Reggaeton"
         },
         {
             "id": 6,
             "image": "",
             "name": "Afrodisíaco",
-            "name-artist": "Rauw Alejandro",
-            "album-date": "2020-11-13",
-            "times-played": "1,400,000",
-            "likes": "1,000,000"
+            "name_artist": "Rauw Alejandro",
+            "album_date": "2020-11-13",
+            "times_played": "1,400,000",
+            "likes": "1,000,000",
+            "genre": "Latin Pop"
         },
         {
             "id": 7,
             "image": "",
             "name": "La Última Promesa",
-            "name-artist": "Justin Quiles",
-            "album-date": "2021-08-20",
-            "times-played": "900,000",
-            "likes": "700,000"
+            "name_artist": "Justin Quiles",
+            "album_date": "2021-08-20",
+            "times_played": "900,000",
+            "likes": "700,000",
+            "genre": "Reggaeton"
         },
         {
             "id": 8,
             "image": "",
-            "name": "Anuel AA",
-            "name-artist": "Emmanuel",
-            "album-date": "2020-05-29",
-            "times-played": "1,600,000",
-            "likes": "1,200,000"
+            "name": "Emmanuel",
+            "name_artist": "Anuel AA",
+            "album_date": "2020-05-29",
+            "times_played": "1,600,000",
+            "likes": "1,200,000",
+            "genre": "Trap"
         },
         {
             "id": 9,
             "image": "",
             "name": "Un Verano Sin Ti",
-            "name-artist": "Bad Bunny",
-            "album-date": "2022-05-06",
-            "times-played": "2,000,000",
-            "likes": "1,500,000"
+            "name_artist": "Bad Bunny",
+            "album_date": "2022-05-06",
+            "times_played": "2,000,000",
+            "likes": "1,500,000",
+            "genre": "Reggaeton"
         },
         {
             "id": 10,
             "image": "",
             "name": "El Último Tour Del Mundo",
-            "name-artist": "Bad Bunny",
-            "album-date": "2020-11-27",
-            "times-played": "1,800,000",
-            "likes": "1,300,000"
+            "name_artist": "Bad Bunny",
+            "album_date": "2020-11-27",
+            "times_played": "1,800,000",
+            "likes": "1,300,000",
+            "genre": "Trap"
         },
         {
             "id": 11,
             "image": "",
             "name": "KG0516",
-            "name-artist": "Karol G",
-            "album-date": "2021-03-25",
-            "times-played": "1,500,000",
-            "likes": "1,200,000"
+            "name_artist": "Karol G",
+            "album_date": "2021-03-25",
+            "times_played": "1,500,000",
+            "likes": "1,200,000",
+            "genre": "Reggaeton"
         },
         {
             "id": 12,
+            "image": "",
             "name": "Nattividad",
-            "name-artist": "Natti Natasha",
-            "album-date": "2021-09-24",
-            "times-played": "1,200,000",
-            "likes": "900,000"
+            "name_artist": "Natti Natasha",
+            "album_date": "2021-09-24",
+            "times_played": "1,200,000",
+            "likes": "900,000",
+            "genre": "Latin Pop"
         },
         {
             "id": 13,
+            "image": "",
             "name": "Vice Versa",
-            "name-artist": "Rauw Alejandro",
-            "album-date": "2021-06-25",
-            "times-played": "1,700,000",
-            "likes": "1,100,000"
+            "name_artist": "Rauw Alejandro",
+            "album_date": "2021-06-25",
+            "times_played": "1,700,000",
+            "likes": "1,100,000",
+            "genre": "Reggaeton"
         },
         {
             "id": 14,
+            "image": "",
             "name": "Afrodisíaco",
-            "name-artist": "Rauw Alejandro",
-            "album-date": "2020-11-13",
-            "times-played": "1,400,000",
-            "likes": "1,000,000"
+            "name_artist": "Rauw Alejandro",
+            "album_date": "2020-11-13",
+            "times_played": "1,400,000",
+            "likes": "1,000,000",
+            "genre": "Latin Pop"
         },
         {
             "id": 15,
+            "image": "",
             "name": "La Última Promesa",
-            "name-artist": "Justin Quiles",
-            "album-date": "2021-08-20",
-            "times-played": "900,000",
-            "likes": "700,000"
+            "name_artist": "Justin Quiles",
+            "album_date": "2021-08-20",
+            "times_played": "900,000",
+            "likes": "700,000",
+            "genre": "Reggaeton"
         },
         {
             "id": 16,
+            "image": "",
             "name": "Emmanuel",
-            "name-artist": "Anuel AA",
-            "album-date": "2020-05-29",
-            "times-played": "1,600,000",
-            "likes": "1,200,000"
+            "name_artist": "Anuel AA",
+            "album_date": "2020-05-29",
+            "times_played": "1,600,000",
+            "likes": "1,200,000",
+            "genre": "Trap"
+        },
+        {
+            "id": 17,
+            "image": "",
+            "name": "YHLQMDLG",
+            "name_artist": "Bad Bunny",
+            "album_date": "2020-02-29",
+            "times_played": "2,200,000",
+            "likes": "1,700,000",
+            "genre": "Hip-Hop"
+        },
+        {
+            "id": 18,
+            "image": "",
+            "name": "Vibras",
+            "name_artist": "J Balvin",
+            "album_date": "2018-05-25",
+            "times_played": "1,900,000",
+            "likes": "1,400,000",
+            "genre": "Hip-Hop"
         }
     ]
 }
-

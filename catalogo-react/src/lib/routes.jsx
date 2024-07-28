@@ -6,7 +6,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 import Home from '../pages/Home'
 import Catalogo from "../pages/Catalogo";
-import Producto from "../pages/Producto";
+import Album from "../pages/Album";
 
 // importar páginas especiales
 import Layout from '../Layout'
@@ -27,7 +27,7 @@ const router = createBrowserRouter([{
         },
         {
             path: 'producto/:productoId',
-            element: <Producto/>
+            element: <Album/>
         },
         {
             path: '*',

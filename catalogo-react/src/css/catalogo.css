@@ -1,0 +1,96 @@
+.catalogContainer {
+    
+}
+
+.aLink{
+    text-decoration: none;
+  }
+
+.filterBlock {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.buttonBlock {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+button {
+    color: black;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.btnA {
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.btnB {
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.btnC {
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.btnD {
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.btnE {
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.albumCatalog {
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   grid-template-rows: auto ;
+   
+}
+
+.part1Album {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.Card {
+    margin: 3rem;
+    border: 3px solid black;
+    border-radius: 1rem;
+}
+
+.catalogImage {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+

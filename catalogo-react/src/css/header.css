@@ -1,0 +1,20 @@
+.headerBlock {
+   color: white;
+   display: flex;
+   justify-content: center;
+}
+
+.h3Style {  
+   display: flex;
+   align-items: center;
+   padding-top: .4rem;
+   font-family: "Source Sans 3", sans-serif;
+
+}
+
+.headerContainer {
+    
+    background-color: black;
+    height: 30px;
+}
+

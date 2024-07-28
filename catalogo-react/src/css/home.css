@@ -1,12 +1,29 @@
-@font-face {
-    font-family: 'FontTittle';
-    src: url('/assets/retro_couture.woff2') format('woff2'),
-         url('/assets/retro_couture.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  /* Aplicar la fuente a h1 */
-  .h1Style {
-    font-family: 'FontTittle', sans-serif;
-  }
+.HomeContainer {
+  background-color: #eff8e2;
+  display: flex;
+}
+
+.iterativeBlock {
+  width: 300px;
+  height: 300px;
+  background-color: rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: flex-start;
+  position: relative;
+  padding-left: 200px;
+  background-image: url('ruta/a/tu/imagen.jpg'); /* Especifica la URL de la imagen */
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen en el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.imgHome {
+  width: 70%;
+  position: relative;
+}
+
+.tittleText {
+  ;
+}

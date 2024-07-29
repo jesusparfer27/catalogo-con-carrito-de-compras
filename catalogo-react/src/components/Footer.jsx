@@ -1,8 +1,10 @@
+import '../css/footer.css'
+
 const Footer = () => {
     return (
-        <footer>
+        <footer className="FooterContainer">
             <h1>Soy Footer</h1>
-            <div className="">
+            <div className="FooterContainer">
                 <div className="">
 
                 </div>

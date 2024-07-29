@@ -1,29 +1,209 @@
-.HomeContainer {
-  background-color: #eff8e2;
-  display: flex;
+/* Definir las variables de color */
+:root {
+  --color-secondary: #DCDCDC; /* Ejemplo de color secundario */
+  --color-tertiary: #C0C0C0; /* Ejemplo de color terciario */
+  --color-quaternary: #696969; /* Ejemplo de color cuaternario */
+  --color-quinary: #000000;   /* Ejemplo de color quinario */
 }
 
-.iterativeBlock {
-  width: 300px;
-  height: 300px;
-  background-color: rebeccapurple;
+/* Animación de sombras */
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+/* Asegúrate de que tu `body` no esté afectando la posición de los elementos */
+@font-face {
+  font-family: 'RetroCouture';
+  src: url('../assets/retro_couture/RetroCouture-Texture.woff') format('woff'),
+       url('../assets/retro_couture/RetroCouture.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'RetroCouture', sans-serif;  
+  overflow-x: hidden; /* Para evitar el desplazamiento horizontal no deseado */
+}
+
+.mainContainer {
+  margin-top: 20%;
+}
+
+.background-wallpaper2 {
+  position: absolute;
+  width: 160%;
+  right: 0;
+  height: 130%;
+  z-index: 1;
+  margin-left: 20%;
+  rotate: 50deg;
+  background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+} 
+
+.Container {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: #eff8e2;
+  background-position: 40% 50%;
+  -webkit-background-clip: text;
+  color: transparent;
+  overflow: hidden;
+  z-index: 2;
+  background: url("../assets/retro_couture/background-mage.jpg") repeat;
+}
+
+.title {
+  font-weight: 800;
+  font-size: calc(200px - 20%);
+  text-align: center;
+  padding-top: 12%;
+  width: 100%;
+  color: transparent; /* Hacer que el texto sea transparente para que el fondo sea visible */
+ color: white;
+  background-position: 40% 50%;
+  background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+  -webkit-background-clip: text; /* Para navegadores WebKit */
+  background-clip: text; /* Para otros navegadores compatibles */
+  font-family: 'RetroCouture', sans-serif;
+  z-index: 10; /* Mayor z-index para estar encima de todo */
+  
+  /* Añadir la animación de sombras */
+  animation: shadows 5s infinite;
+}
+
+.title, .subtitle {
+  font-weight: 800;
+  font-size: calc(200px - 20%);
+  text-align: center;
+  padding-top: 12%;
+  width: 100%;
+  color: transparent; /* Hacer que el texto sea transparente para que el fondo sea visible */
+ color: white;
+  background-position: 40% 50%;
+  background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+  -webkit-background-clip: text; /* Para navegadores WebKit */
+  background-clip: text; /* Para otros navegadores compatibles */
+  font-family: 'RetroCouture', sans-serif;
+  z-index: 10; /* Mayor z-index para estar encima de todo */
+
+}
+
+.subtitle {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.0rem;
+}
+
+.homeFlex {
+  display: flex;
+  z-index: 4; /* Por debajo del título */
+  position: relative;
+}
+
+.imageContainer {
+  width: 50%;
+  height: auto;
+  z-index: 3;
+}
+
+.ImageContent {
+  width: 180%;
+}
+
+.homeFlexText {
+  width: 100%;
+  height: auto;
+}
+
+.logoText {
+  height: 50%;
+}
+
+.blockLink {
+  right: 20%;
+  width: 100%;
+  height: 50%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  align-self: flex-start;
-  position: relative;
-  padding-left: 200px;
-  background-image: url('ruta/a/tu/imagen.jpg'); /* Especifica la URL de la imagen */
-  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-  background-position: center; /* Centra la imagen en el fondo */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  z-index: 5; /* Por debajo del título */
 }
 
-.imgHome {
-  width: 70%;
-  position: relative;
+.BlockTextAndLink {
+  width: 60%;
+  margin-top: 6%;
+  margin-left: 20%;
+  text-align: center;
+  z-index: 6; /* Por debajo del título */
 }
 
-.tittleText {
-  ;
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  z-index: 7; /* Por debajo del título */
+}
+
+.navLink:hover {
+  cursor: pointer;
+  color: yellow;
+}
+
+.h1Text {
+  color: white;
+  font-size: 3rem;
+  font-family: 'RetroCouture';
 }

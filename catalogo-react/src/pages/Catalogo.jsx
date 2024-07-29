@@ -1,16 +1,19 @@
 import { useState, useEffect, useContext, createContext } from 'react'
 import { Link } from 'react-router-dom'
 import { ModoOscuroContext } from '../Layout'
+import { AlbumContext } from '../Layout'
 
-export const AlbumContext = createContext()
+// export const AlbumContext = createContext()
 
 const Catalogo = () => {
 
-    const { tema, setTema, nombre } = useContext(ModoOscuroContext)
+    const { tema, setTema, nombre, setNombre } = useContext(ModoOscuroContext)
+    const { albums, setAlbums } = useContext(AlbumContext)
+
 
     const [albumsPerPage, setAlbumsPerPage] = useState(8)
     const [albumsFilter, setAlbumsFilter] = useState([])
-    const [albums, setAlbums] = useState([])
+    // const [albums, setAlbums] = useState([])
     const [filter, setFilter] = useState("")
     const [buttonFilterGenre, setButtonFilterGenre] = useState("All")
     const [info, setInfo] = useState({
@@ -83,7 +86,6 @@ const Catalogo = () => {
                         <button className='x' style={{}} onClick={
                             () => {
                                 setFilter("")
-                                getAlbums("/lib.json")
                             }
                         }>x</button>
                     </div>
@@ -91,7 +93,7 @@ const Catalogo = () => {
 
                 <div className="albumCatalog">
                     {
-                        albumsFilter.map((album, index) => <AlbumCard key={album.id} {...album} index={index} />
+                        albumsFilter.map((album) => <AlbumCard key={album.id} {...album} />
                         )
                     }
                 </div>

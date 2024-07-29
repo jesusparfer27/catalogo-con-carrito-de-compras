@@ -71,8 +71,9 @@ body {
   overflow-x: hidden; /* Para evitar el desplazamiento horizontal no deseado */
 }
 
-.mainContainer {
+.Container {
   margin-top: 20%;
+  
 }
 
 .background-wallpaper2 {
@@ -89,7 +90,6 @@ body {
 .Container {
   position: relative;
   left: 50%;
-  top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
@@ -145,7 +145,8 @@ body {
   padding-top: 10px;
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 1.0rem;
+  font-size: 1.3rem;
+  padding-left: 10rem;
 }
 
 .homeFlex {
@@ -180,10 +181,11 @@ body {
   display: flex;
   flex-direction: column;
   z-index: 5; /* Por debajo del título */
+
 }
 
 .BlockTextAndLink {
-  width: 60%;
+  width: 100%;
   margin-top: 6%;
   margin-left: 20%;
   text-align: center;
@@ -195,6 +197,8 @@ body {
   text-decoration: none;
   font-size: 1.2rem;
   z-index: 7; /* Por debajo del título */
+  border: 2px solid white;
+  border-radius: .5rem;
 }
 
 .navLink:hover {
@@ -206,4 +210,8 @@ body {
   color: white;
   font-size: 3rem;
   font-family: 'RetroCouture';
-}
+  padding-left: 8rem;
+  width: 60%;
+
+} 
+

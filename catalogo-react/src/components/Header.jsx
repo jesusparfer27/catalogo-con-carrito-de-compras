@@ -22,7 +22,9 @@ const Header = () => {
                             </span>
                         </button>
                     </li>
-
+                    <li>
+                        <NavLink className="NavLinkHeader" to="/">Inicio</NavLink>
+                    </li>
                     <li>
                         <NavLink className="NavLinkHeader" to="/Catalogo">Explora</NavLink>
                     </li>

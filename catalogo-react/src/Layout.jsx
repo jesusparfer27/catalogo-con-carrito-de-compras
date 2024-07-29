@@ -5,29 +5,33 @@ import { createContext, useState } from 'react'
 import './css/home.css'
 import './css/catalogo.css'
 
-export const ModoOscuroContext = createContext("light")
-
+export const ModoOscuroContext = createContext()
+export const AlbumContext = createContext()
 
 const Layout = () => {
     const [tema, setTema] = useState("light")
-
+    const [albums, setAlbums] = useState([])
     const [nombre, setNombre] = useState("jesus")
 
+    
+
     return (
-        <ModoOscuroContext.Provider value={{tema, setTema, nombre}}>
-    <>
-    <Header />
-        <div>
-            <main className='mainContainer'>
-                <Outlet />
-            </main>
-        </div>
-    <Footer />
-    <button onClick={() => {
-        setTema(tema == "dark" ? "light": "dark");
-    }}>Cambiar tema: {tema}</button>
-    </>
-    </ModoOscuroContext.Provider>
+        <AlbumContext.Provider value={{albums, setAlbums}}>
+        <ModoOscuroContext.Provider value={{ tema, setTema, nombre, setNombre }}>
+            <>
+                <Header />
+                <div>
+                    <main className='mainContainer'>
+                        <Outlet />
+                    </main>
+                </div>
+                <Footer />
+                <button onClick={() => {
+                    setTema(tema == "dark" ? "light" : "dark");
+                }}>Cambiar tema: {tema}</button>
+            </>
+        </ModoOscuroContext.Provider>
+        </AlbumContext.Provider>
     );
 }
 

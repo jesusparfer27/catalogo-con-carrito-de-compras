@@ -1,7 +1,7 @@
 // Album.js
 import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
-import { AlbumContext } from './Catalogo'; // Asegúrate de que el path es correcto
+import { AlbumContext } from '../Layout'; // Asegúrate de que el path es correcto
 
 const Album = () => {
   const { productoId } = useParams();
@@ -10,6 +10,8 @@ const Album = () => {
   const album = albums.find(album => album.id === parseInt(productoId, 10));
 
   if (!album) return <p>Album not found</p>;    
+
+  console.log(albums)
 
   return (
     <article>

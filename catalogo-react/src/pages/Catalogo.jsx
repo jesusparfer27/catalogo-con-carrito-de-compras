@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext, createContext } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { ModoOscuroContext } from '../Layout'
 import { AlbumContext } from '../Layout'
@@ -9,17 +9,15 @@ const Catalogo = () => {
 
     const { tema, setTema, nombre, setNombre } = useContext(ModoOscuroContext)
     const { albums, setAlbums } = useContext(AlbumContext)
-
-
     const [albumsPerPage, setAlbumsPerPage] = useState(8)
     const [albumsFilter, setAlbumsFilter] = useState([])
-    // const [albums, setAlbums] = useState([])
     const [filter, setFilter] = useState("")
     const [buttonFilterGenre, setButtonFilterGenre] = useState("All")
     const [info, setInfo] = useState({
         count: 0,
         page: 0
     })
+    const [currentPage, setCurrentPage] = useState(1)
 
     useEffect(() => {
         getAlbums("/public/backend/API/v1/lib.json")
@@ -35,7 +33,6 @@ const Catalogo = () => {
     const handleFilterByArtistName = (e) => {
         const string = e.target.value;
         setFilter(string);
-        console.log(string)
 
         if (string.trim().length > 3) {
             const filtered = albums.filter(album => album.name_artist.toLowerCase().includes(string.trim().toLowerCase()));
@@ -43,6 +40,7 @@ const Catalogo = () => {
         } else {
             setAlbumsFilter(albums)
         }
+        setCurrentPage(1)
     }
 
     const handleFilterByGenreButton = (genre) => {
@@ -50,54 +48,85 @@ const Catalogo = () => {
         if (genre === "All") {
             setAlbumsFilter(albums)
         } else {
-            const filtered = albums.filter(albums => albums.genre.toLowerCase() === genre.toLowerCase())
+            const filtered = albums.filter(album => album.genre.toLowerCase() === genre.toLowerCase())
             setAlbumsFilter(filtered)
+        }
+        setCurrentPage(1)
+    }
+
+    const pageNumbers = []
+    const totalProducts = albumsFilter.length;
+    const totalPages = Math.ceil(totalProducts / albumsPerPage);
+
+    for (let i = 1; i <= totalPages; i++) {
+        pageNumbers.push(i)
+    }
+
+    const onPreviusPage = () => {
+        if (currentPage > 1) {
+            setCurrentPage(currentPage - 1)
         }
     }
 
+    const onNextPage = () => {
+        if (currentPage < totalPages) {
+            setCurrentPage(currentPage + 1)
+        }
+    }
 
+    const onSpecificPage = (n) => {
+        setCurrentPage(n)
+    }
 
+    const startIndex = (currentPage - 1) * albumsPerPage;
+    const currentAlbums = albumsFilter.slice(startIndex, startIndex + albumsPerPage);
 
     return (
         <AlbumContext.Provider value={{ albums }}>
             <article className='articleContainer'>
-                {/* <h1>catalogo ({tema} - {nombre})</h1> */}
                 <section className='catalogContainer'>
                     <div className="filterBlock">
                         <div className="buttonBlock">
-                            <button className={`${buttonFilterGenre == "All" ? "btnA" : ""}`} onClick={() => handleFilterByGenreButton("All")}>All</button>
-                            <button className={`${buttonFilterGenre == "Trap" ? "btnB" : ""}`} onClick={() => handleFilterByGenreButton("Trap")}>Trap</button>
-                            <button className={`${buttonFilterGenre == "Latin Pop" ? "btnC" : ""}`} onClick={() => handleFilterByGenreButton("Latin Pop")}>Latin Pop</button>
-                            <button className={`${buttonFilterGenre == "Hip-Hop" ? "btnD" : ""}`} onClick={() => handleFilterByGenreButton("Hip-Hop")}>Hip-Hop</button>
-                            <button className={`${buttonFilterGenre == "Reggaeton" ? "btnE" : ""}`} onClick={() => handleFilterByGenreButton("Reggaeton")}>Reggaeton</button>
-
+                            <button className={`${buttonFilterGenre === "All" ? "btnA" : ""}`} onClick={() => handleFilterByGenreButton("All")}>All</button>
+                            <button className={`${buttonFilterGenre === "Trap" ? "btnB" : ""}`} onClick={() => handleFilterByGenreButton("Trap")}>Trap</button>
+                            <button className={`${buttonFilterGenre === "Latin Pop" ? "btnC" : ""}`} onClick={() => handleFilterByGenreButton("Latin Pop")}>Latin Pop</button>
+                            <button className={`${buttonFilterGenre === "Hip-Hop" ? "btnD" : ""}`} onClick={() => handleFilterByGenreButton("Hip-Hop")}>Hip-Hop</button>
+                            <button className={`${buttonFilterGenre === "Reggaeton" ? "btnE" : ""}`} onClick={() => handleFilterByGenreButton("Reggaeton")}>Reggaeton</button>
                         </div>
                         <div className="searchbarBlock">
                             <input type="text"
-
                                 onChange={handleFilterByArtistName}
                                 placeholder='¿A quien te gustaría escuchar? (4 chars)'
                                 style={{ width: "400px", height: "2rem", borderRadius: ".6rem", border: "1px solid black" }}
                                 value={filter}
-
                             />
                             {filter}
-
-                            <button className='x' style={{}} onClick={
-                                () => {
-                                    setFilter("")
-                                }
-                            }>x</button>
+                            <button className='x' onClick={() => setFilter("")}>x</button>
                         </div>
                     </div>
 
                     <div className="albumCatalog">
                         {
-                            albumsFilter.map((album) => <AlbumCard key={album.id} {...album} />
-                            )
+                            currentAlbums.map((album) => <AlbumCard key={album.id} {...album} />)
                         }
                     </div>
                 </section>
+                <nav className="pagination">
+                    <a className={`pagination-previous ${currentPage === 1 ? 'is-disabled' : ''} black-text`} onClick={onPreviusPage}>Anterior</a>
+                    <ul className="pagination-list">
+                        {
+                            pageNumbers.map(noPage => (
+                                <li key={noPage}>
+                                    <a className={`pagination-link ${noPage === currentPage ? 'is-current' : ''} black-text`}
+                                        onClick={() => onSpecificPage(noPage)}
+                                    >
+                                        {noPage}</a>
+                                </li>
+                            ))}
+                    </ul>
+                    <a className={`pagination-next ${currentPage >= pageNumbers.length ? 'is-disabled' : ''} black-text`} onClick={onNextPage}>Siguiente</a>
+                    
+                </nav>
             </article>
         </AlbumContext.Provider>
     );
@@ -131,7 +160,5 @@ const AlbumCard = ({ id, image, name, name_artist, album_date, times_played, lik
         </Link>
     )
 }
-
-
 
 export default Catalogo;

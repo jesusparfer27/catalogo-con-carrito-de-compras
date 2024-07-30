@@ -1,5 +1,5 @@
 .FooterContainer {
     z-index: 2;
-    background-color: rebeccapurple;
-    
+    background-color: black;
+    height: 200px;
 }

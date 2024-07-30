@@ -3,14 +3,32 @@ import '../css/footer.css'
 const Footer = () => {
     return (
         <footer className="FooterContainer">
-            <h1>Soy Footer</h1>
-            <div className="FooterContainer">
-                <div className="">
+            <div className="InfoFooter">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div className="HelpFooter">
+            <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div className="ContactFooter">
+            <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div className="FormFooter">
 
-                </div>
-                <div className="">
-
-                </div>
             </div>
         </footer>
     );

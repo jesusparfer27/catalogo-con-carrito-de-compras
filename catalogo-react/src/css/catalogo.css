@@ -147,3 +147,39 @@ button,
     cursor: pointer;
     font-size: 1.4rem;
 }
+
+.pagination {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 6rem;
+    
+}
+
+.pagination-previous:hover, 
+.pagination-next:hover {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pagination-previous {
+    border: 2px solid black;
+    padding: .8rem;
+}
+
+.pagination-next {
+    border: 2px solid black;
+    padding: .8rem;
+}
+
+.pagination-list {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.pagination-link:hover {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}

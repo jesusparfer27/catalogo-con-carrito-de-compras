@@ -70,3 +70,6 @@ table {
 	border-spacing: 0;
 }
 
+main {
+  top: 0;
+}

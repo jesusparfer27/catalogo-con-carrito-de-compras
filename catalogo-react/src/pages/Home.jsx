@@ -28,26 +28,27 @@ const Home = () => {
     }, []);
 
     return (
-        <body className='Container'>
-            <div className="background-wallpaper2"></div>
-                <div className="homeFlex">
-                    <div className="imageContainer">
-                        <img className="ImageContent" src={stylishImage} alt="" />
-                    </div>
-                    <div className="homeFlexText">
-                        <div className="logoText">
-                            <div className="title">Musiko</div>
-                            <div className="subtitle">Tu viaje musical comienza aquí</div>
-                        </div>
-                        <div className="blockLink">
-                            <div className="BlockTextAndLink">
-                                <h1 className='h1Text'>Explora Nuestra Colección de Álbumes Musicales</h1>
-                                <NavLink className="navLink" to="/Catalogo">Link Aqui</NavLink>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </body>
+        <body className="Container">
+  <div className="background-wallpaper2"></div>
+  <div className="homeFlex">
+    <div className="imageContainer">
+      <img className="ImageContent" src={stylishImage} alt="" />
+    </div>
+    <div className="homeFlexText">
+      <div className="logoText">
+        <div className="title">Musiko</div>
+        <div className="subtitle">Tu viaje musical comienza aquí</div>
+      </div>
+      <div className="blockLink">
+        <div className="BlockTextAndLink">
+          <h1 className="h1Text">Explora Nuestra Colección de Álbumes Musicales</h1>
+          <NavLink className="navLink" to="/Catalogo">Link Aqui</NavLink>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
     );
 }
 

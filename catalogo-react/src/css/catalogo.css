@@ -1,10 +1,23 @@
-.catalogContainer {
-    
+body {
+    background-color: gainsboro;
 }
 
-.aLink{
+.catalogContainer {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna principal */
+    grid-template-rows: auto auto auto; /* Tres filas: filtros, catálogo y artículos */
+    gap: 2rem; /* Espacio entre las filas */
+    padding: 2rem; /* Espacio alrededor del contenedor */
+}
+
+.articleContainer {
+    border-top: 1px solid black;
+    margin-top: 5rem;
+}
+
+.aLink {
     text-decoration: none;
-  }
+}
 
 .filterBlock {
     display: flex;
@@ -18,8 +31,13 @@
     justify-content: space-around;
 }
 
-button {
-    color: black;
+button,
+.btnA,
+.btnB,
+.btnC,
+.btnD,
+.btnE {
+    color: white;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -29,68 +47,103 @@ button {
 .btnA {
     color: white;
     background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 1.4rem;
 }
 
 .btnB {
     color: white;
     background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 1.4rem;
 }
 
 .btnC {
     color: white;
     background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 1.4rem;
 }
 
 .btnD {
     color: white;
     background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 1.4rem;
 }
 
 .btnE {
     color: white;
     background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 1.4rem;
+}
+
+.searchbarBlock {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .albumCatalog {
-   display: grid;
-   grid-template-columns: auto auto auto auto;
-   grid-template-rows: auto ;
-   
-}
-
-.part1Album {
-    display: flex;
-    width: 100%;
-    height: 50%;
+    grid-row: 2 / 3; /* Segunda fila */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Ajuste automático de columnas */
+    gap: 2rem; /* Espacio entre columnas */
+    margin: 3rem;
 }
 
 .Card {
     margin: 3rem;
     border: 3px solid black;
     border-radius: 1rem;
+    height: auto; /* Ajuste automático de altura */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff; /* Fondo blanco */
+    transition: transform 0.3s ease-in-out;
+}
+
+.Card:hover {
+    transform: scale(1.05);
 }
 
 .catalogImage {
-    display: flex;
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 1rem;
 }
 
+.no-underline {
+    text-decoration: none;
+    color: black;
+}
 
+.material-symbols-outlined {
+    color: rebeccapurple;
+    font-size: 1.4rem;
+}
+
+.likedAlbum {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+
+}
+
+.h3AlbumTitle {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.strongStyle {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.reactionsData {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.x {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+}

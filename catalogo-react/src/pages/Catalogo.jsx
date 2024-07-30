@@ -59,51 +59,51 @@ const Catalogo = () => {
 
 
     return (
-        <AlbumContext.Provider value={{albums}}>
-        <main>
-            <h1>catalogo ({tema} - {nombre})</h1>
-            <section className='catalogContainer'>
-                <div className="filterBlock">
-                    <div className="buttonBlock">
-                        <button className={`${buttonFilterGenre == "All" ? "btnA" : ""}`} onClick={() => handleFilterByGenreButton("All")}>All</button>
-                        <button className={`${buttonFilterGenre == "Trap" ? "btnB" : ""}`} onClick={() => handleFilterByGenreButton("Trap")}>Trap</button>
-                        <button className={`${buttonFilterGenre == "Latin Pop" ? "btnC" : ""}`} onClick={() => handleFilterByGenreButton("Latin Pop")}>Latin Pop</button>
-                        <button className={`${buttonFilterGenre == "Hip-Hop" ? "btnD" : ""}`} onClick={() => handleFilterByGenreButton("Hip-Hop")}>Hip-Hop</button>
-                        <button className={`${buttonFilterGenre == "Reggaeton" ? "btnE" : ""}`} onClick={() => handleFilterByGenreButton("Reggaeton")}>Reggaeton</button>
+        <AlbumContext.Provider value={{ albums }}>
+            <article className='articleContainer'>
+                {/* <h1>catalogo ({tema} - {nombre})</h1> */}
+                <section className='catalogContainer'>
+                    <div className="filterBlock">
+                        <div className="buttonBlock">
+                            <button className={`${buttonFilterGenre == "All" ? "btnA" : ""}`} onClick={() => handleFilterByGenreButton("All")}>All</button>
+                            <button className={`${buttonFilterGenre == "Trap" ? "btnB" : ""}`} onClick={() => handleFilterByGenreButton("Trap")}>Trap</button>
+                            <button className={`${buttonFilterGenre == "Latin Pop" ? "btnC" : ""}`} onClick={() => handleFilterByGenreButton("Latin Pop")}>Latin Pop</button>
+                            <button className={`${buttonFilterGenre == "Hip-Hop" ? "btnD" : ""}`} onClick={() => handleFilterByGenreButton("Hip-Hop")}>Hip-Hop</button>
+                            <button className={`${buttonFilterGenre == "Reggaeton" ? "btnE" : ""}`} onClick={() => handleFilterByGenreButton("Reggaeton")}>Reggaeton</button>
 
+                        </div>
+                        <div className="searchbarBlock">
+                            <input type="text"
+
+                                onChange={handleFilterByArtistName}
+                                placeholder='¿A quien te gustaría escuchar? (4 chars)'
+                                style={{ width: "400px", height: "2rem", borderRadius: ".6rem", border: "1px solid black" }}
+                                value={filter}
+
+                            />
+                            {filter}
+
+                            <button className='x' style={{}} onClick={
+                                () => {
+                                    setFilter("")
+                                }
+                            }>x</button>
+                        </div>
                     </div>
-                    <div className="searchbarBlock">
-                        <input type="text"
 
-                            onChange={handleFilterByArtistName}
-                            placeholder='¿A quien te gustaría escuchar? (4 chars)'
-                            style={{ width: "400px", height: "2rem", borderRadius: ".6rem", border: "1px solid black" }}
-                            value={filter}
-
-                        />
-                        {filter}
-
-                        <button className='x' style={{}} onClick={
-                            () => {
-                                setFilter("")
-                            }
-                        }>x</button>
+                    <div className="albumCatalog">
+                        {
+                            albumsFilter.map((album) => <AlbumCard key={album.id} {...album} />
+                            )
+                        }
                     </div>
-                </div>
-
-                <div className="albumCatalog">
-                    {
-                        albumsFilter.map((album) => <AlbumCard key={album.id} {...album} />
-                        )
-                    }
-                </div>
-            </section>
-        </main>
+                </section>
+            </article>
         </AlbumContext.Provider>
     );
 }
 
-const AlbumCard = ({id, image, name, name_artist, album_date, times_played, likes, genre }) => {
+const AlbumCard = ({ id, image, name, name_artist, album_date, times_played, likes, genre }) => {
     return (
         <Link to={{
             pathname: `/producto/${id}`,
@@ -116,8 +116,16 @@ const AlbumCard = ({id, image, name, name_artist, album_date, times_played, like
                 <h3 className='h3AlbumTitle'>{name}</h3>
                 <strong className='strongStyle'>{name_artist}</strong>
                 <div className='reactionsData'>
-                    <p>{times_played}</p>
-                    <p>{likes}</p>
+                    <p className="likedAlbum">
+                        <span className="material-symbols-outlined">
+                            play_arrow
+                        </span>{times_played}
+                    </p>
+                    <p className="likedAlbum">
+                        <span className="material-symbols-outlined">
+                            favorite
+                        </span>{likes}
+                    </p>
                 </div>
             </article>
         </Link>

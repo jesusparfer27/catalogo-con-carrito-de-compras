@@ -1,0 +1,31 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegúrate de que sea mayor que otros elementos */
+}
+
+.modalContainer {
+    width: 90%; /* O el ancho deseado */
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.inputError {
+    border: 1px solid red;
+}
+
+.errorText {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}

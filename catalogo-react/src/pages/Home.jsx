@@ -3,10 +3,15 @@ import stylishImage from '../assets/stylish-modern-woman-headphones-listening-mu
 import '../css/home.css';
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
+import ModalLogin from '../components/ModalLogin';
+import { useModal } from '../context/ModalContext';
 
 import { useEffect } from 'react';
 
 const Home = () => {
+
+  const { isModalOpen } = useModal();
+
     useEffect(() => {
         $(document).ready(function () {
             var mouseX = 0, mouseY = 0;
@@ -28,6 +33,8 @@ const Home = () => {
     }, []);
 
     return (
+      <>
+      {isModalOpen && <ModalLogin />}
         <body className="Container">
   <div className="background-wallpaper2"></div>
   <div className="homeFlex">
@@ -48,6 +55,7 @@ const Home = () => {
     </div>
   </div>
 </body>
+</>
 
     );
 }

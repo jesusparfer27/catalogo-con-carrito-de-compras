@@ -43,7 +43,25 @@
             "album_date": "2020-11-27",
             "times_played": "1,800,000",
             "likes": "1,300,000",
-            "genre": "Trap"
+            "genre": "Trap",
+            "songs": [
+                {"id": 1, "name": "El Mundo es Mío", "likes": 450000, "times_played": 620000},
+                {"id": 2, "name": "Te Mudaste", "likes": 400000, "times_played": 600000},
+                {"id": 3, "name": "Hoy Cobré", "likes": 380000, "times_played": 580000},
+                {"id": 4, "name": "Maldita Pobreza", "likes": 370000, "times_played": 550000},
+                {"id": 5, "name": "La Noche de Anoche", "likes": 360000, "times_played": 540000},
+                {"id": 6, "name": "Te Deseo lo Mejor", "likes": 350000, "times_played": 530000},
+                {"id": 7, "name": "Yo Visto Así", "likes": 340000, "times_played": 520000},
+                {"id": 8, "name": "Haciendo Que Me Amas", "likes": 330000, "times_played": 500000},
+                {"id": 9, "name": "Booker T", "likes": 320000, "times_played": 490000},
+                {"id": 10, "name": "La Droga", "likes": 310000, "times_played": 480000},
+                {"id": 11, "name": "Dákiti", "likes": 300000, "times_played": 470000},
+                {"id": 12, "name": "Trellas", "likes": 290000, "times_played": 450000},
+                {"id": 13, "name": "Sorry Papi", "likes": 280000, "times_played": 440000},
+                {"id": 14, "name": "120", "likes": 270000, "times_played": 430000},
+                {"id": 15, "name": "Antes Que Se Acabe", "likes": 260000, "times_played": 420000},
+                {"id": 16, "name": "Cantares de Navidad", "likes": 250000, "times_played": 410000}
+            ]
         },
         {
             "id": 3,
@@ -53,7 +71,23 @@
             "album_date": "2021-03-25",
             "times_played": "1,500,000",
             "likes": "1,200,000",
-            "genre": "Reggaeton"
+            "genre": "Reggaeton",
+            "songs": [
+                {"id": 1, "name": "Bichota", "likes": 500000, "times_played": 650000},
+                {"id": 2, "name": "El Barco", "likes": 480000, "times_played": 630000},
+                {"id": 3, "name": "Tusa", "likes": 470000, "times_played": 620000},
+                {"id": 4, "name": "Ay, Dios Mío!", "likes": 460000, "times_played": 610000},
+                {"id": 5, "name": "Location", "likes": 450000, "times_played": 600000},
+                {"id": 6, "name": "200 Copas", "likes": 440000, "times_played": 590000},
+                {"id": 7, "name": "Leyendas", "likes": 430000, "times_played": 580000},
+                {"id": 8, "name": "Gato Malo", "likes": 420000, "times_played": 570000},
+                {"id": 9, "name": "DVD", "likes": 410000, "times_played": 560000},
+                {"id": 10, "name": "Ahora Me Llama", "likes": 400000, "times_played": 550000},
+                {"id": 11, "name": "Poblado (Remix)", "likes": 390000, "times_played": 540000},
+                {"id": 12, "name": "Mientras Me Curo Del Cora", "likes": 380000, "times_played": 530000},
+                {"id": 13, "name": "Dices Que Te Vas", "likes": 370000, "times_played": 520000},
+                {"id": 14, "name": "Beautiful Boy", "likes": 360000, "times_played": 510000}
+            ]
         },
         {
             "id": 4,
@@ -63,7 +97,22 @@
             "album_date": "2021-09-24",
             "times_played": "1,200,000",
             "likes": "900,000",
-            "genre": "Latin Pop"
+            "genre": "Latin Pop",
+            "songs": [
+                {"id": 1, "name": "Noches en Miami", "likes": 350000, "times_played": 500000},
+                {"id": 2, "name": "Ram Pam Pam", "likes": 340000, "times_played": 480000},
+                {"id": 3, "name": "Imposible Amor", "likes": 330000, "times_played": 470000},
+                {"id": 4, "name": "Philliecito", "likes": 320000, "times_played": 460000},
+                {"id": 5, "name": "La Falta Que Me Haces", "likes": 310000, "times_played": 450000},
+                {"id": 6, "name": "Las Nenas", "likes": 300000, "times_played": 440000},
+                {"id": 7, "name": "Antes Que Salga El Sol", "likes": 290000, "times_played": 430000},
+                {"id": 8, "name": "Arrebatá", "likes": 280000, "times_played": 420000},
+                {"id": 9, "name": "Quien Sabe", "likes": 270000, "times_played": 410000},
+                {"id": 10, "name": "Tentación", "likes": 260000, "times_played": 400000},
+                {"id": 11, "name": "Me Estás Matando", "likes": 250000, "times_played": 390000},
+                {"id": 12, "name": "Loco", "likes": 240000, "times_played": 380000},
+                {"id": 13, "name": "Te Falto Yo", "likes": 230000, "times_played": 370000}
+            ]
         },
         {
             "id": 5,
@@ -73,8 +122,24 @@
             "album_date": "2021-06-25",
             "times_played": "1,700,000",
             "likes": "1,100,000",
-            "genre": "Reggaeton"
-        },
+            "genre": "Reggaeton",
+            "songs": [
+                {"id": 1, "name": "Todo de Ti", "likes": 450000, "times_played": 650000},
+                {"id": 2, "name": "Reloj", "likes": 400000, "times_played": 600000},
+                {"id": 3, "name": "Tattoo (Remix)", "likes": 380000, "times_played": 580000},
+                {"id": 4, "name": "Cúrame", "likes": 370000, "times_played": 570000},
+                {"id": 5, "name": "Desesperados", "likes": 360000, "times_played": 550000},
+                {"id": 6, "name": "Dile a Él", "likes": 350000, "times_played": 540000},
+                {"id": 7, "name": "Cual Es Tu Plan", "likes": 340000, "times_played": 530000},
+                {"id": 8, "name": "La Cita", "likes": 330000, "times_played": 520000},
+                {"id": 9, "name": "Por Siempre", "likes": 320000, "times_played": 510000},
+                {"id": 10, "name": "Nadie Como Tú", "likes": 310000, "times_played": 500000},
+                {"id": 11, "name": "No Me Vuelvo a Enamorar", "likes": 300000, "times_played": 490000},
+                {"id": 12, "name": "La Fama", "likes": 290000, "times_played": 480000},
+                {"id": 13, "name": "Baila", "likes": 280000, "times_played": 470000}
+            ]
+        }
+        ,
         {
             "id": 6,
             "image": "https://i.pinimg.com/originals/55/d3/e0/55d3e0e97a8a5f28a99441cd1a7ff7b1.jpg",
@@ -83,8 +148,24 @@
             "album_date": "2020-11-13",
             "times_played": "1,400,000",
             "likes": "1,000,000",
-            "genre": "Latin Pop"
-        },
+            "genre": "Latin Pop",
+            "songs": [
+                {"id": 1, "name": "Tattoo", "likes": 500000, "times_played": 700000},
+                {"id": 2, "name": "Cielo", "likes": 450000, "times_played": 680000},
+                {"id": 3, "name": "Reloj", "likes": 420000, "times_played": 650000},
+                {"id": 4, "name": "Te Felicito", "likes": 400000, "times_played": 640000},
+                {"id": 5, "name": "La Noche", "likes": 390000, "times_played": 620000},
+                {"id": 6, "name": "Dile a Él", "likes": 380000, "times_played": 610000},
+                {"id": 7, "name": "Ya No Tiene Novio", "likes": 370000, "times_played": 600000},
+                {"id": 8, "name": "Como Antes", "likes": 360000, "times_played": 590000},
+                {"id": 9, "name": "Dile Que Tú Me Quieres", "likes": 350000, "times_played": 580000},
+                {"id": 10, "name": "Desesperados", "likes": 340000, "times_played": 570000},
+                {"id": 11, "name": "Lo Que Quiero", "likes": 330000, "times_played": 550000},
+                {"id": 12, "name": "Todo de Ti", "likes": 320000, "times_played": 540000},
+                {"id": 13, "name": "XOXO", "likes": 310000, "times_played": 530000}
+            ]
+        }
+        ,
         {
             "id": 7,
             "image": "https://m.media-amazon.com/images/I/91rOLO8veFL._UF894,1000_QL80_.jpg",
@@ -93,8 +174,21 @@
             "album_date": "2021-08-20",
             "times_played": "900,000",
             "likes": "700,000",
-            "genre": "Reggaeton"
-        },
+            "genre": "Reggaeton",
+            "songs": [
+                {"id": 1, "name": "La Última Promesa", "likes": 150000, "times_played": 200000},
+                {"id": 2, "name": "Llamame", "likes": 140000, "times_played": 190000},
+                {"id": 3, "name": "Chao", "likes": 130000, "times_played": 180000},
+                {"id": 4, "name": "Ponte Pila", "likes": 120000, "times_played": 170000},
+                {"id": 5, "name": "Dile Que No", "likes": 110000, "times_played": 160000},
+                {"id": 6, "name": "Baila Conmigo", "likes": 100000, "times_played": 150000},
+                {"id": 7, "name": "Te Amo", "likes": 95000, "times_played": 140000},
+                {"id": 8, "name": "Aventura", "likes": 90000, "times_played": 130000},
+                {"id": 9, "name": "Amor Eterno", "likes": 85000, "times_played": 120000},
+                {"id": 10, "name": "Tú y Yo", "likes": 80000, "times_played": 110000}
+            ]
+        }
+        ,
         {
             "id": 8,
             "image": "",
@@ -103,8 +197,24 @@
             "album_date": "2020-05-29",
             "times_played": "1,600,000",
             "likes": "1,200,000",
-            "genre": "Trap"
-        },
+            "genre": "Trap",
+            "songs": [
+                {"id": 1, "name": "Me Gusta", "likes": 400000, "times_played": 600000},
+                {"id": 2, "name": "Fusa", "likes": 380000, "times_played": 580000},
+                {"id": 3, "name": "Los Dioses", "likes": 360000, "times_played": 560000},
+                {"id": 4, "name": "Mienteme", "likes": 350000, "times_played": 550000},
+                {"id": 5, "name": "Narcos", "likes": 340000, "times_played": 540000},
+                {"id": 6, "name": "Ayer", "likes": 330000, "times_played": 530000},
+                {"id": 7, "name": "Culpables", "likes": 320000, "times_played": 520000},
+                {"id": 8, "name": "Aventura", "likes": 310000, "times_played": 510000},
+                {"id": 9, "name": "No Me Dejes Solo", "likes": 300000, "times_played": 500000},
+                {"id": 10, "name": "Enemigos", "likes": 290000, "times_played": 490000},
+                {"id": 11, "name": "Banda", "likes": 280000, "times_played": 480000},
+                {"id": 12, "name": "Como Antes", "likes": 270000, "times_played": 470000},
+                {"id": 13, "name": "Karma", "likes": 260000, "times_played": 460000}
+            ]
+        }
+        ,
         {
             "id": 9,
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWTtzqMV5IdshVU43SXguXn9dUatj_HEu1dw&s",
@@ -113,7 +223,19 @@
             "album_date": "2013-02-26",
             "times_played": "500,000",
             "likes": "300,000",
-            "genre": "Reggaeton"
+            "genre": "Reggaeton",
+            "songs": [
+                {"id": 1, "name": "Real", "likes": 80000, "times_played": 100000},
+                {"id": 2, "name": "Bailame", "likes": 75000, "times_played": 95000},
+                {"id": 3, "name": "Si Te Vas", "likes": 70000, "times_played": 90000},
+                {"id": 4, "name": "La Noche", "likes": 65000, "times_played": 85000},
+                {"id": 5, "name": "Amor Eterno", "likes": 60000, "times_played": 80000},
+                {"id": 6, "name": "Te Quiero", "likes": 55000, "times_played": 75000},
+                {"id": 7, "name": "Sin Ti", "likes": 50000, "times_played": 70000},
+                {"id": 8, "name": "Aunque Duela", "likes": 45000, "times_played": 65000},
+                {"id": 9, "name": "Cuando Vuelvas", "likes": 40000, "times_played": 60000},
+                {"id": 10, "name": "Te Extrañaré", "likes": 35000, "times_played": 55000}
+            ]
         },
         {
             "id": 10,
@@ -123,8 +245,21 @@
             "album_date": "2015-03-20",
             "times_played": "600,000",
             "likes": "400,000",
-            "genre": "Reggaeton"
-        },
+            "genre": "Reggaeton",
+            "songs": [
+                {"id": 1, "name": "Carpe Diem", "likes": 90000, "times_played": 120000},
+                {"id": 2, "name": "No Me Siento Bien", "likes": 85000, "times_played": 110000},
+                {"id": 3, "name": "Baila Conmigo", "likes": 80000, "times_played": 100000},
+                {"id": 4, "name": "Mala", "likes": 75000, "times_played": 95000},
+                {"id": 5, "name": "Tu y Yo", "likes": 70000, "times_played": 90000},
+                {"id": 6, "name": "Dile Que Te Vaya Bien", "likes": 65000, "times_played": 85000},
+                {"id": 7, "name": "Perdóname", "likes": 60000, "times_played": 80000},
+                {"id": 8, "name": "Me Gusta", "likes": 55000, "times_played": 75000},
+                {"id": 9, "name": "Te Amo", "likes": 50000, "times_played": 70000},
+                {"id": 10, "name": "Bebé", "likes": 45000, "times_played": 65000}
+            ]
+        }
+        ,
         {
             "id": 11,
             "image": "",
@@ -133,8 +268,21 @@
             "album_date": "2016-07-29",
             "times_played": "700,000",
             "likes": "500,000",
-            "genre": "Reggaeton"
-        },
+            "genre": "Reggaeton",
+            "songs": [
+                {"id": 1, "name": "La Promesa", "likes": 95000, "times_played": 130000},
+                {"id": 2, "name": "Baila", "likes": 90000, "times_played": 120000},
+                {"id": 3, "name": "Aventuras", "likes": 85000, "times_played": 115000},
+                {"id": 4, "name": "Te Quiero", "likes": 80000, "times_played": 110000},
+                {"id": 5, "name": "Mujeriego", "likes": 75000, "times_played": 105000},
+                {"id": 6, "name": "Aunque Duela", "likes": 70000, "times_played": 100000},
+                {"id": 7, "name": "No Te Vayas", "likes": 65000, "times_played": 95000},
+                {"id": 8, "name": "Mi Cama", "likes": 60000, "times_played": 90000},
+                {"id": 9, "name": "No Soy Yo", "likes": 55000, "times_played": 85000},
+                {"id": 10, "name": "Dame Más", "likes": 50000, "times_played": 80000}
+            ]
+        }
+        ,
         {
             "id": 12,
             "image": "",
@@ -143,8 +291,21 @@
             "album_date": "2013-10-29",
             "times_played": "1,500,000",
             "likes": "1,000,000",
-            "genre": "Reggaeton"
-        },
+            "genre": "Reggaeton",
+            "songs": [
+                {"id": 1, "name": "Yo Te Lo Dije", "likes": 250000, "times_played": 300000},
+                {"id": 2, "name": "6 AM", "likes": 230000, "times_played": 290000},
+                {"id": 3, "name": "La Familia", "likes": 220000, "times_played": 280000},
+                {"id": 4, "name": "En Lo Oscuro", "likes": 210000, "times_played": 270000},
+                {"id": 5, "name": "Ay Vamos", "likes": 200000, "times_played": 260000},
+                {"id": 6, "name": "Despertar", "likes": 190000, "times_played": 250000},
+                {"id": 7, "name": "Un Hombre Que Falla", "likes": 180000, "times_played": 240000},
+                {"id": 8, "name": "Los Hombres No Lloran", "likes": 170000, "times_played": 230000},
+                {"id": 9, "name": "Mi Gente", "likes": 160000, "times_played": 220000},
+                {"id": 10, "name": "El Que Espera", "likes": 150000, "times_played": 210000}
+            ]
+        }
+        ,
         {
             "id": 13,
             "image": "",
@@ -153,18 +314,44 @@
             "album_date": "2016-06-24",
             "times_played": "2,000,000",
             "likes": "1,500,000",
-            "genre": "Reggaeton"
-        },
+            "genre": "Reggaeton",
+            "songs": [
+                {"id": 1, "name": "Bobo", "likes": 500000, "times_played": 700000},
+                {"id": 2, "name": "Sigo Extrañándote", "likes": 450000, "times_played": 650000},
+                {"id": 3, "name": "Mi Gente", "likes": 400000, "times_played": 600000},
+                {"id": 4, "name": "Safari", "likes": 380000, "times_played": 580000},
+                {"id": 5, "name": "Maluma", "likes": 360000, "times_played": 560000},
+                {"id": 6, "name": "No Hay Miedo", "likes": 340000, "times_played": 540000},
+                {"id": 7, "name": "La Luz", "likes": 320000, "times_played": 520000},
+                {"id": 8, "name": "Vente Pa' Ca", "likes": 300000, "times_played": 500000},
+                {"id": 9, "name": "Juntos", "likes": 290000, "times_played": 480000},
+                {"id": 10, "name": "En El Amor", "likes": 280000, "times_played": 460000}
+            ]
+        }
+        ,
         {
             "id": 14,
-            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA51BMVEXxWiP////wSwDwSAD//fz85N796+UAAAAaGhrtSAD3+fnxVRjwTgD0WyPwSgAVFRXwUQrFTCE4ODjV1dXuknrpiG7mgmYMDAwpKSmJOR74uqv72tH0i272oYvp6en71MtkZGT5xbhDQ0Pk5ORwcHBUVFSfn58AFBl5eXnvOgDzfVn4sqD6zcL+7+z3p5L5wbL0iGqEhITHx8ewsLD1ckn0YCtZUk/7ajp5X1iPj4/nXSybm5s7HBIAGx4oPD+DRTGgSy/va0HbcVO5NQDBhnhJVVh4FQAWKi4jIyOJPCKpsLLetatpaWnnrXw+AAAEE0lEQVR4nO3da1PaQACFYQLRTUli4q2xoBFBvAIW0Fpr7629///f091NAoIBplNtc9bzfjCTbcfhmV2SjcMMJcv0Sv/7BTx4j0NoLxlbKlw+LhvasZ0KyyVDq1AIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiB+FJTf0vNDNGfdkrv+gL+5eWiB0V05OO53athdOjofexl693tnxvX/wGv+u+cKV7W7ykRv7dOX2dFV6dvpZnFq56NM4V1g5G3+saCkcU8r18fiyX3DiPGH5FlD+j9GCrNRvj3cLvlDnCN3nkx8Oq6WUcGdy/KzYxDnCSnfq828XyXr07KnxUqHX6WyhezIFsU71BdXdnh7vhXd/b3GaLQxPx4aq/lnXyzGsjcdj/Q+7hV6mc4R7mePAEaIRy2vKihr3Otl4XwjRbMnLbKH3Q7OFXibcF7p4WthMxluwwmyVDhKIaKaSbJUOR+OoqzS7WaRTKES1NnGlaY/GUa80pbI9KWmdJxvw9G6xlo3HF6B3i+zOfpRJOpN3/NHc1go9hXN3bcnubD2FvLj0c8dfFnoGF+y8PfU5d+tKQ6JX0zvvaz3+uthrdOHTk76eDtpv3r4r3X16Wt9/235f9EeLRU/Aod/bXe4u1c6nnvLTJ+DeZdF9i/+K4YdeueyFdyHJXzEe+NXdR/xLFH4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4UFi3fnV3+t9yBCf0POxtZm7d6qjrJJYIJ3Q1LV8075H+nLZrwo7bEa4ksOcRbibBjgtD/tK4sR2KgDgciPRtq4efcr2NEE67eqEkTgZ69KGokZ0Kt09YXE96H/qqatiPhqEkcykNLfT24I44k4eaZIcKGnDTHCeR7bytQtKo8c6R7XRgiPBRxX5sGA32oXqmDXLXNQ1OEQTtynEia2oETOFFfnzmiIYwRSpZcnMIJJE9ilW5fKKUZQnfzqwTKS+i3QL8X1QqN2taaPHMOvxsh3Pgh9HVlqA5DeUdMrzLqLfkz9yvQ0YSbVhTou+BWEESWZQs1hcn948qMXdumnDZ1E7QGQhxY+uvP1b7Glnd9M3ZtUmiJht6jrQlbbU1FW58N5ZI1RnitN6PWoK8P/UGy7f5lWXtmCKuj4uSnlZzJgxFXmpL7ZHa5QDjhn0chfhTiRyF+FOJHIX4U4kchfhTi94iExxVDO06FZkchfr8BPfda+omvoeYAAAAASUVORK5CYII=",
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA51BMVEXxWiP////wSwDwSAD//fz85N796+UAAAAaGhrtSAD3+fnxVRjwTgD0WyPwSgAVFRXwUQrFTCE4ODjV1dXuknrpiG7mgmYMDAwpKSmJOR74uqv72tH0i272oYvp6en71MtkZGT5xbhDQ0Pk5ORwcHBUVFSfn58AFBl5eXnvOgDzfVn4sqD6zcL+7+z3p5L5wbL0iGqEhITHx8ewsLD1ckn0YCtZUk/7ajp5X1iPj4/nXSybm5s7HBIAGx4oPD+DRTGgSy/va0HbcVO5NQDBhnhJVVh4FQAWKi4jIyOJPCKpsLLetatpaWnnrXw+AAAEE0lEQVR4nO3da1PaQACFYQLRTUli4q2xoBFBvAIW0Fpr7629///f091NAoIBplNtc9bzfjCTbcfhmV2SjcMMJcv0Sv/7BTx4j0NoLxlbKlw+LhvasZ0KyyVDq1AIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiB+FJTf0vNDNGfdkrv+gL+5eWiB0V05OO53athdOjofexl693tnxvX/wGv+u+cKV7W7ykRv7dOX2dFV6dvpZnFq56NM4V1g5G3+saCkcU8r18fiyX3DiPGH5FlD+j9GCrNRvj3cLvlDnCN3nkx8Oq6WUcGdy/KzYxDnCSnfq828XyXr07KnxUqHX6WyhezIFsU71BdXdnh7vhXd/b3GaLQxPx4aq/lnXyzGsjcdj/Q+7hV6mc4R7mePAEaIRy2vKihr3Otl4XwjRbMnLbKH3Q7OFXibcF7p4WthMxluwwmyVDhKIaKaSbJUOR+OoqzS7WaRTKES1NnGlaY/GUa80pbI9KWmdJxvw9G6xlo3HF6B3i+zOfpRJOpN3/NHc1go9hXN3bcnubD2FvLj0c8dfFnoGF+y8PfU5d+tKQ6JX0zvvaz3+uthrdOHTk76eDtpv3r4r3X16Wt9/235f9EeLRU/Aod/bXe4u1c6nnvLTJ+DeZdF9i/+K4YdeueyFdyHJXzEe+NXdR/xLFH4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4UFi3fnV3+t9yBCf0POxtZm7d6qjrJJYIJ3Q1LV8075H+nLZrwo7bEa4ksOcRbibBjgtD/tK4sR2KgDgciPRtq4efcr2NEE67eqEkTgZ69KGokZ0Kt09YXE96H/qqatiPhqEkcykNLfT24I44k4eaZIcKGnDTHCeR7bytQtKo8c6R7XRgiPBRxX5sGA32oXqmDXLXNQ1OEQTtynEia2oETOFFfnzmiIYwRSpZcnMIJJE9ilW5fKKUZQnfzqwTKS+i3QL8X1QqN2taaPHMOvxsh3Pgh9HVlqA5DeUdMrzLqLfkz9yvQ0YSbVhTou+BWEESWZQs1hcn948qMXdumnDZ1E7QGQhxY+uvP1b7Glnd9M3ZtUmiJht6jrQlbbU1FW58N5ZI1RnitN6PWoK8P/UGy7f5lWXtmCKuj4uSnlZzJgxFXmpL7ZHa5QDjhn0chfhTiRyF+FOJHIX4U4kchfhTi94iExxVDO06FZkchfr8BPfda+omvoeYAAAAASUVORK5CYII=",
             "name": "Vibras",
             "name_artist": "J Balvin",
             "album_date": "2018-05-25",
             "times_played": "2,500,000",
             "likes": "2,000,000",
-            "genre": "Reggaeton"
-        },
+            "genre": "Reggaeton",
+            "songs": [
+                {"id": 1, "name": "Mi Gente", "likes": 600000, "times_played": 800000},
+                {"id": 2, "name": "Machika", "likes": 550000, "times_played": 780000},
+                {"id": 3, "name": "Ahora o Nunca", "likes": 500000, "times_played": 750000},
+                {"id": 4, "name": "En El Amor", "likes": 480000, "times_played": 720000},
+                {"id": 5, "name": "Ritmo", "likes": 450000, "times_played": 700000},
+                {"id": 6, "name": "No Me Mires Así", "likes": 440000, "times_played": 680000},
+                {"id": 7, "name": "Baila Así", "likes": 420000, "times_played": 660000},
+                {"id": 8, "name": "Ambiente", "likes": 400000, "times_played": 640000},
+                {"id": 9, "name": "Te Quiero", "likes": 390000, "times_played": 620000},
+                {"id": 10, "name": "Cual Es Tu Plan", "likes": 380000, "times_played": 600000}
+            ]
+        }
+        ,
         {
             "id": 15,
             "image": "",
@@ -173,8 +360,21 @@
             "album_date": "2019-06-28",
             "times_played": "3,000,000",
             "likes": "2,500,000",
-            "genre": "Reggaeton/Trap"
-        },
+            "genre": "Reggaeton/Trap",
+            "songs": [
+                {"id": 1, "name": "La Canción", "likes": 800000, "times_played": 1200000},
+                {"id": 2, "name": "Yo Le Llego", "likes": 700000, "times_played": 1100000},
+                {"id": 3, "name": "Te Mudaste", "likes": 600000, "times_played": 1000000},
+                {"id": 4, "name": "Como Antes", "likes": 550000, "times_played": 950000},
+                {"id": 5, "name": "Un Peso", "likes": 500000, "times_played": 900000},
+                {"id": 6, "name": "La Dificil", "likes": 480000, "times_played": 850000},
+                {"id": 7, "name": "Hasta Que Me Mueras", "likes": 450000, "times_played": 820000},
+                {"id": 8, "name": "Vuelve", "likes": 440000, "times_played": 800000},
+                {"id": 9, "name": "Buena Vida", "likes": 430000, "times_played": 780000},
+                {"id": 10, "name": "Si Estuvieses Aquí", "likes": 420000, "times_played": 760000}
+            ]
+        }
+        ,
         {
             "id": 16,
             "image": "",
@@ -183,7 +383,19 @@
             "album_date": "2020-03-19",
             "times_played": "3,500,000",
             "likes": "3,000,000",
-            "genre": "Reggaeton"
+            "genre": "Reggaeton",
+            "songs": [
+                {"id": 1, "name": "Amarillo", "likes": 900000, "times_played": 1500000},
+                {"id": 2, "name": "Rojo", "likes": 850000, "times_played": 1400000},
+                {"id": 3, "name": "Azul", "likes": 800000, "times_played": 1300000},
+                {"id": 4, "name": "Verde", "likes": 780000, "times_played": 1250000},
+                {"id": 5, "name": "Blanco", "likes": 750000, "times_played": 1200000},
+                {"id": 6, "name": "Negro", "likes": 700000, "times_played": 1150000},
+                {"id": 7, "name": "Gris", "likes": 680000, "times_played": 1100000},
+                {"id": 8, "name": "Morado", "likes": 670000, "times_played": 1050000},
+                {"id": 9, "name": "Naranja", "likes": 660000, "times_played": 1000000},
+                {"id": 10, "name": "Colores", "likes": 650000, "times_played": 950000}
+            ]
         },
         {
             "id": 17,
@@ -193,17 +405,42 @@
             "album_date": "2020-02-29",
             "times_played": "2,200,000",
             "likes": "1,700,000",
-            "genre": "Hip-Hop"
-        },
+            "genre": "Hip-Hop",
+            "songs": [
+                {"id": 1, "name": "Si Veo a Tu Mamá", "likes": 600000, "times_played": 800000},
+                {"id": 2, "name": "La Difícil", "likes": 550000, "times_played": 750000},
+                {"id": 3, "name": "Vete", "likes": 700000, "times_played": 900000},
+                {"id": 4, "name": "Yo Perreo Sola", "likes": 900000, "times_played": 1100000},
+                {"id": 5, "name": "Bichota", "likes": 650000, "times_played": 850000},
+                {"id": 6, "name": "La Santa", "likes": 680000, "times_played": 820000},
+                {"id": 7, "name": "Safaera", "likes": 850000, "times_played": 1050000},
+                {"id": 8, "name": "Ignorantes", "likes": 750000, "times_played": 950000},
+                {"id": 9, "name": "Una Vez", "likes": 720000, "times_played": 930000},
+                {"id": 10, "name": "Haciendo Historia", "likes": 700000, "times_played": 910000}
+            ]
+        }
+        ,
         {
             "id": 18,
-            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA51BMVEXxWiP////wSwDwSAD//fz85N796+UAAAAaGhrtSAD3+fnxVRjwTgD0WyPwSgAVFRXwUQrFTCE4ODjV1dXuknrpiG7mgmYMDAwpKSmJOR74uqv72tH0i272oYvp6en71MtkZGT5xbhDQ0Pk5ORwcHBUVFSfn58AFBl5eXnvOgDzfVn4sqD6zcL+7+z3p5L5wbL0iGqEhITHx8ewsLD1ckn0YCtZUk/7ajp5X1iPj4/nXSybm5s7HBIAGx4oPD+DRTGgSy/va0HbcVO5NQDBhnhJVVh4FQAWKi4jIyOJPCKpsLLetatpaWnnrXw+AAAEE0lEQVR4nO3da1PaQACFYQLRTUli4q2xoBFBvAIW0Fpr7629///f091NAoIBplNtc9bzfjCTbcfhmV2SjcMMJcv0Sv/7BTx4j0NoLxlbKlw+LhvasZ0KyyVDq1AIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiB+FJTf0vNDNGfdkrv+gL+5eWiB0V05OO53athdOjofexl693tnxvX/wGv+u+cKV7W7ykRv7dOX2dFV6dvpZnFq56NM4V1g5G3+saCkcU8r18fiyX3DiPGH5FlD+j9GCrNRvj3cLvlDnCN3nkx8Oq6WUcGdy/KzYxDnCSnfq828XyXr07KnxUqHX6WyhezIFsU71BdXdnh7vhXd/b3GaLQxPx4aq/lnXyzGsjcdj/Q+7hV6mc4R7mePAEaIRy2vKihr3Otl4XwjRbMnLbKH3Q7OFXibcF7p4WthMxluwwmyVDhKIaKaSbJUOR+OoqzS7WaRTKES1NnGlaY/GUa80pbI9KWmdJxvw9G6xlo3HF6B3i+zOfpRJOpN3/NHc1go9hXN3bcnubD2FvLj0c8dfFnoGF+y8PfU5d+tKQ6JX0zvvaz3+uthrdOHTk76eDtpv3r4r3X16Wt9/235f9EeLRU/Aod/bXe4u1c6nnvLTJ+DeZdF9i/+K4YdeueyFdyHJXzEe+NXdR/xLFH4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4UFi3fnV3+t9yBCf0POxtZm7d6qjrJJYIJ3Q1LV8075H+nLZrwo7bEa4ksOcRbibBjgtD/tK4sR2KgDgciPRtq4efcr2NEE67eqEkTgZ69KGokZ0Kt09YXE96H/qqatiPhqEkcykNLfT24I44k4eaZIcKGnDTHCeR7bytQtKo8c6R7XRgiPBRxX5sGA32oXqmDXLXNQ1OEQTtynEia2oETOFFfnzmiIYwRSpZcnMIJJE9ilW5fKKUZQnfzqwTKS+i3QL8X1QqN2taaPHMOvxsh3Pgh9HVlqA5DeUdMrzLqLfkz9yvQ0YSbVhTou+BWEESWZQs1hcn948qMXdumnDZ1E7QGQhxY+uvP1b7Glnd9M3ZtUmiJht6jrQlbbU1FW58N5ZI1RnitN6PWoK8P/UGy7f5lWXtmCKuj4uSnlZzJgxFXmpL7ZHa5QDjhn0chfhTiRyF+FOJHIX4U4kchfhTi94iExxVDO06FZkchfr8BPfda+omvoeYAAAAASUVORK5CYII=",
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA51BMVEXxWiP////wSwDwSAD//fz85N796+UAAAAaGhrtSAD3+fnxVRjwTgD0WyPwSgAVFRXwUQrFTCE4ODjV1dXuknrpiG7mgmYMDAwpKSmJOR74uqv72tH0i272oYvp6en71MtkZGT5xbhDQ0Pk5ORwcHBUVFSfn58AFBl5eXnvOgDzfVn4sqD6zcL+7+z3p5L5wbL0iGqEhITHx8ewsLD1ckn0YCtZUk/7ajp5X1iPj4/nXSybm5s7HBIAGx4oPD+DRTGgSy/va0HbcVO5NQDBhnhJVVh4FQAWKi4jIyOJPCKpsLLetatpaWnnrXw+AAAEE0lEQVR4nO3da1PaQACFYQLRTUli4q2xoBFBvAIW0Fpr7629///f091NAoIBplNtc9bzfjCTbcfhmV2SjcMMJcv0Sv/7BTx4j0NoLxlbKlw+LhvasZ0KyyVDq1AIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiB+FJTf0vNDNGfdkrv+gL+5eWiB0V05OO53athdOjofexl693tnxvX/wGv+u+cKV7W7ykRv7dOX2dFV6dvpZnFq56NM4V1g5G3+saCkcU8r18fiyX3DiPGH5FlD+j9GCrNRvj3cLvlDnCN3nkx8Oq6WUcGdy/KzYxDnCSnfq828XyXr07KnxUqHX6WyhezIFsU71BdXdnh7vhXd/b3GaLQxPx4aq/lnXyzGsjcdj/Q+7hV6mc4R7mePAEaIRy2vKihr3Otl4XwjRbMnLbKH3Q7OFXibcF7p4WthMxluwwmyVDhKIaKaSbJUOR+OoqzS7WaRTKES1NnGlaY/GUa80pbI9KWmdJxvw9G6xlo3HF6B3i+zOfpRJOpN3/NHc1go9hXN3bcnubD2FvLj0c8dfFnoGF+y8PfU5d+tKQ6JX0zvvaz3+uthrdOHTk76eDtpv3r4r3X16Wt9/235f9EeLRU/Aod/bXe4u1c6nnvLTJ+DeZdF9i/+K4YdeueyFdyHJXzEe+NXdR/xLFH4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4U4kchfhTiRyF+FOJHIX4UFi3fnV3+t9yBCf0POxtZm7d6qjrJJYIJ3Q1LV8075H+nLZrwo7bEa4ksOcRbibBjgtD/tK4sR2KgDgciPRtq4efcr2NEE67eqEkTgZ69KGokZ0Kt09YXE96H/qqatiPhqEkcykNLfT24I44k4eaZIcKGnDTHCeR7bytQtKo8c6R7XRgiPBRxX5sGA32oXqmDXLXNQ1OEQTtynEia2oETOFFfnzmiIYwRSpZcnMIJJE9ilW5fKKUZQnfzqwTKS+i3QL8X1QqN2taaPHMOvxsh3Pgh9HVlqA5DeUdMrzLqLfkz9yvQ0YSbVhTou+BWEESWZQs1hcn948qMXdumnDZ1E7QGQhxY+uvP1b7Glnd9M3ZtUmiJht6jrQlbbU1FW58N5ZI1RnitN6PWoK8P/UGy7f5lWXtmCKuj4uSnlZzJgxFXmpL7ZHa5QDjhn0chfhTiRyF+FOJHIX4U4kchfhTi94iExxVDO06FZkchfr8BPfda+omvoeYAAAAASUVORK5CYII=",
             "name": "Vibras",
             "name_artist": "J Balvin",
             "album_date": "2018-05-25",
             "times_played": "1,900,000",
             "likes": "1,400,000",
-            "genre": "Hip-Hop"
+            "genre": "Hip-Hop",
+            "songs": [
+                {"id": 1, "name": "Ahora", "likes": 600000, "times_played": 800000},
+                {"id": 2, "name": "Mi Gente", "likes": 650000, "times_played": 850000},
+                {"id": 3, "name": "No Me Mires Así", "likes": 700000, "times_played": 900000},
+                {"id": 4, "name": "Ritmo", "likes": 550000, "times_played": 750000},
+                {"id": 5, "name": "Que Pretendes", "likes": 800000, "times_played": 1000000},
+                {"id": 6, "name": "Pa' Romperla", "likes": 750000, "times_played": 950000},
+                {"id": 7, "name": "La Canción", "likes": 900000, "times_played": 1100000},
+                {"id": 8, "name": "Baila Baila Baila", "likes": 850000, "times_played": 1050000},
+                {"id": 9, "name": "Un Año", "likes": 720000, "times_played": 930000},
+                {"id": 10, "name": "Amar Sin Sumar", "likes": 770000, "times_played": 940000}
+            ]
         }
     ]
 }

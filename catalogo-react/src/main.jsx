@@ -1,11 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
 import { RouterProvider } from 'react-router-dom'
 import router from './lib/routes'
-import './css/index.css'
+import { createRoot } from 'react-dom/client'
+import React from 'react'
+import { ModalProvider } from './context/ModalContext'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+
+createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+    <ModalProvider>
+      <RouterProvider router={router} />
+    </ModalProvider>
+  </React.StrictMode>,
 )

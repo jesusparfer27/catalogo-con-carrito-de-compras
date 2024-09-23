@@ -31,6 +31,9 @@ const Header = () => {
                     <li>
                         <NavLink className="NavLinkHeader" to="/producto/:productoId">Tendencias</NavLink>
                     </li>
+                    <li>
+                        <NavLink className="NavLinkHeader" to="/producto/:productoId">Log in</NavLink>
+                    </li>
                 </ul>
             </div>
         </header>

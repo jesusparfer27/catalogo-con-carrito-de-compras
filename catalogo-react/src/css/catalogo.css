@@ -1,185 +1,108 @@
-body {
-    background-color: gainsboro;
-}
-
 .catalogContainer {
-    display: grid;
-    grid-template-columns: 1fr; /* Una columna principal */
-    grid-template-rows: auto auto auto; /* Tres filas: filtros, catálogo y artículos */
-    gap: 2rem; /* Espacio entre las filas */
-    padding: 2rem; /* Espacio alrededor del contenedor */
+    margin-right: 8rem;
+    margin-left: 8rem;
 }
 
-.articleContainer {
-    border-top: 1px solid black;
-    margin-top: 5rem;
-}
-
-.aLink {
-    text-decoration: none;
-}
-
-.filterBlock {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-}
-
-.buttonBlock {
-    display: flex;
-    gap: 2rem;
-    justify-content: space-around;
-}
-
-button,
-.btnA,
-.btnB,
-.btnC,
-.btnD,
-.btnE {
-    color: white;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 1.4rem;
-}
-
-.btnA {
-    color: white;
-    background-color: transparent;
-}
-
-.btnB {
-    color: white;
-    background-color: transparent;
-}
-
-.btnC {
-    color: white;
-    background-color: transparent;
-}
-
-.btnD {
-    color: white;
-    background-color: transparent;
-}
-
-.btnE {
-    color: white;
-    background-color: transparent;
-}
-
-.searchbarBlock {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.albumCatalog {
-    grid-row: 2 / 3; /* Segunda fila */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Ajuste automático de columnas */
-    gap: 2rem; /* Espacio entre columnas */
-    margin: 3rem;
-}
-
-.Card {
-    margin: 3rem;
-    border: 3px solid black;
-    border-radius: 1rem;
-    height: auto; /* Ajuste automático de altura */
-    padding: 1rem;
+.cardAlbum {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff; /* Fondo blanco */
-    transition: transform 0.3s ease-in-out;
-}
-
-.Card:hover {
-    transform: scale(1.05);
-}
-
-.catalogImage {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 1rem;
-}
-
-.no-underline {
-    text-decoration: none;
-    color: black;
-}
-
-.material-symbols-outlined {
-    color: rebeccapurple;
-    font-size: 1.4rem;
-}
-
-.likedAlbum {
-    display: flex;
-    align-items: center;
-    gap: .6rem;
-
-}
-
-.h3AlbumTitle {
-    font-size: 1.5rem;
-    margin: 0.5rem 0;
+    width: 250px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.strongStyle {
-    font-size: 1.2rem;
-    color: #333;
-}
-
-.reactionsData {
+.albumCatalog {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.x {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1.4rem;
+.sectionTitle {
+    font-size: 2rem;
+    margin: 2rem 0;
+    text-align: left;
+    color: white; /* Texto blanco */
+}
+
+.cardAlbum img {
+    width: 100%;
+    height: 200px;
+    max-width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cardAlbum strong {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white; /* Texto blanco */
+}
+
+.cardAlbum p {
+    font-size: 14px;
+    color: white; /* Texto blanco */
 }
 
 .pagination {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 6rem;
-    
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.pagination-previous:hover, 
-.pagination-next:hover {
-    color: red;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.pagination-previous {
-    border: 2px solid black;
-    padding: .8rem;
-}
-
+.pagination-previous,
 .pagination-next {
-    border: 2px solid black;
-    padding: .8rem;
+    margin: 0 10px;
+    color: white; /* Texto blanco */
 }
 
-.pagination-list {
-    display: flex;
-    gap: 3rem;
-    align-items: center;
+.pagination-list a {
+    color: white; /* Texto blanco */
 }
 
-.pagination-link:hover {
-    color: red;
-    font-weight: bold;
+.is-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* Estilos para los botones */
+.buttonBlock button {
+    background-color: transparent;
+    color: white; /* Texto blanco */
+    border: 1px solid white; /* Borde blanco */
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttonBlock button:hover {
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+}
+
+/* Favorito icon style */
+.imageContainer {
+    position: relative;
+}
+
+.favorite-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px; /* Tamaño del ícono */
+    color: white; /* Color blanco por defecto */
+    transition: color 0.3s ease; /* Transición para el hover */
+}
+
+.imageContainer:hover .favorite-icon {
+    color: white; /* Cambia a rojo en hover */
+}
+
+span:hover {
+    color: white;
 }

@@ -1,8 +1,12 @@
 import '../css/header.css'
 import { NavLink } from 'react-router-dom'
+import { useModal } from '../context/ModalContext';
 
 
 const Header = () => {
+const { openModal } = useModal();
+
+
     return (
         <header className="headerContainer">
             <div className='headerBlock'>
@@ -32,7 +36,7 @@ const Header = () => {
                         <NavLink className="NavLinkHeader" to="/producto/:productoId">Tendencias</NavLink>
                     </li>
                     <li>
-                        <NavLink className="NavLinkHeader" to="/producto/:productoId">Log in</NavLink>
+                        <button onClick={openModal}>Iniciar sesión</button> 
                     </li>
                 </ul>
             </div>

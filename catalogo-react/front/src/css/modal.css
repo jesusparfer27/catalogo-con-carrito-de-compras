@@ -1,0 +1,73 @@
+/* Estilos generales para el overlay del modal */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Asegúrate de que el modal esté en la parte superior */
+}
+
+/* Contenedor del modal */
+.modalContainer {
+    background-color: black; /* Color de fondo del modal */
+    color: white; /* Color del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 2rem;
+    width: 400px; /* Ancho del modal */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+    position: relative;
+}
+
+/* Títulos del modal */
+.modalContainer h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Estilo para los inputs */
+.emailInput, .passwordInput {
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo para los inputs de texto */
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Tomar el ancho completo */
+    padding: 0.8rem;
+    border: 2px solid white; /* Bordes blancos */
+    border-radius: 5px; /* Bordes redondeados en inputs */
+    background-color: #3a3a3a; /* Fondo gris oscuro para inputs */
+    color: white; /* Color del texto en inputs */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+/* Estilo para el texto de error */
+.errorText {
+    color: #ff4d4d; /* Color rojo para mensajes de error */
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Estilo para el botón */
+button {
+    background-color: #5c5c5c; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: 2px solid white; /* Bordes blancos en el botón */
+    border-radius: 5px; /* Bordes redondeados en el botón */
+    padding: 0.8rem;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1rem; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Transición para el hover */
+    width: 100%; /* Botón ocupa el ancho completo */
+}
+
+/* Estilo para el hover del botón */
+button:hover {
+    background-color: #7a7a7a; /* Color más claro al pasar el mouse */
+}

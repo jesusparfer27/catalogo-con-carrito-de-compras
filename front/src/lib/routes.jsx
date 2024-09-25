@@ -11,6 +11,8 @@ import Album from "../pages/Album";
 // importar páginas especiales
 import Layout from '../Layout'
 import ErrorPage from "../error-page";
+import Admin from "../pages/Admin";
+import PrivateRoute from "../components/PrivateRoute";
 
 const router = createBrowserRouter([{
     path: '/',
@@ -28,6 +30,12 @@ const router = createBrowserRouter([{
         {
             path: 'producto/:productoId',
             element: <Album/>
+        },
+        {
+            path:"admin",
+            element: <PrivateRoute>
+                <Admin/>
+            </PrivateRoute>
         },
         {
             path: '*',

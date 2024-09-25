@@ -1,8 +1,7 @@
 import express from 'express'
 import cors from 'cors'
-import { HOST, PORT } from './config/config.js'
-import mongoRoutes from './routes/mongodb.routes.js'
-import apiRoutes from './routes/index.routes.js'
+import { HOST, PORT } from './config/mongo.config.js'
+import  mongoRoutes  from './routes/mongodb.routes.js'
 
 const app = express()
 
@@ -24,10 +23,10 @@ app.get('/', ( req , res ) => {
 })
 
 // Rutas para mysql
-app.use("/API/v1/", apiRoutes)
+// app.use("/API/v1/", apiRoutes)
 
 // Rutas para mongoDB
-app.use('/API/v1/mongo', mongoRoutes)
+app.use('/API/v1', mongoRoutes)
 
 app.listen(PORT, () => {
     console.log(`Iniciando API en ${HOST}:${PORT}`)

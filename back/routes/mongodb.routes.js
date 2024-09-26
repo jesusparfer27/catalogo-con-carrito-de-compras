@@ -1,11 +1,14 @@
 import { Router } from "express";
 import { loginUser } from '../controllers/login.controller.js';
 import { getAllAlbums } from '../controllers/albums.controller.js';
+import { registerUser } from '../controllers/register.controller.js' 
+import { authenticateToken } from "../middlewares/auth.js";
 
 const router = Router();
 
-router.get("/mongo/albums", getAllAlbums);
-router.post("/login", loginUser);
+router.get("/albums", authenticateToken, getAllAlbums);
+router.post("/login", authenticateToken, loginUser);
+router.post("/register", authenticateToken, registerUser)
 
 
 // Controles comunes de CRUD

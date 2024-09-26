@@ -1,5 +1,10 @@
 import dotenv from 'dotenv';
 
+// Creación de variable __dirname para usar carpeta public con vercel
+import path from 'path';
+
+export const __dirname = path.resolve()
+
 const result = dotenv.config();
 if (result.error) {
     throw new Error("Error al cargar las variables de entorno: " + result.error);
@@ -7,6 +12,8 @@ if (result.error) {
 
 export const HOST = process.env.HOST || "http://localhost";
 export const PORT = process.env.PORT || 3001;
+
+export const JWT_SECRET = process.env.JWT_SECRET || 'utiliza_una_jwt_SeGuRa_no_esta'
 
 // Configuración de MongoDB
 export const mongodbUri = process.env.MONGODB_URI;

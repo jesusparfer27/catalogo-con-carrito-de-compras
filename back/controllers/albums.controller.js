@@ -1,5 +1,7 @@
 import { connectDB } from '../data/mongodb.js'
 import { Album } from '../data/mongodb.js'
+import bcrypt from 'bcrypt'
+import jwt from 'jsonwebtoken'
 
 connectDB();
 

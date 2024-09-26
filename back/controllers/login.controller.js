@@ -1,4 +1,7 @@
 import { User } from '../data/mongodb.js'; // Asegúrate de que la ruta sea correcta
+import { JWT_SECRET } from '../config/mongo.config.js';
+import bcrypt from 'bcrypt'
+import jwt from 'jsonwebtoken'
 
 export const loginUser = async (req, res, next) => {
     const { email, password } = req.body;

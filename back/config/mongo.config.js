@@ -13,6 +13,8 @@ if (result.error) {
 export const HOST = process.env.HOST || "http://localhost";
 export const PORT = process.env.PORT || 3001;
 
+export const FULL_DOMAIN = `${HOST}:${PORT}`
+
 export const JWT_SECRET = process.env.JWT_SECRET || 'utiliza_una_jwt_SeGuRa_no_esta'
 
 // Configuración de MongoDB

@@ -6,6 +6,7 @@ import jwt from 'jsonwebtoken'
 connectDB();
 
 
+
 export const getAllAlbums = async (req, res, next) => {
     try {
         console.log("albums")

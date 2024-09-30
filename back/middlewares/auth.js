@@ -1,5 +1,6 @@
 import jwt from 'jsonwebtoken'
-import { JWT_SECRET } from '../config/mongo.config';
+import { JWT_SECRET } from '../config/mongo.config.js';
+import bcrypt from 'bcrypt'
 
 export const authenticateToken = (req, res, next) => {
 

@@ -17,7 +17,7 @@ const connectDB = async () => {
 // Schema de Usuario
 const userSchema = new mongoose.Schema({
     
-    nombre: {
+    name: {
         type: String,
         required: true
     },

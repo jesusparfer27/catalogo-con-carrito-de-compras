@@ -7,12 +7,12 @@ connectDB();
 
 export const registerUser = async (req, res, next) => {
     try {
-        const { email, password, nombre, image = "https://picsum.photos/200/300" } = req.body;
+        const { email, password, name } = req.body;
 
         console.log("Datos recibidos:", req.body);
 
         // Verificar si faltan campos requeridos
-        if (!email || !password || !nombre) {
+        if (!email || !password || !name) {
             return res.status(400).json({ message: "Faltan datos requeridos", success: false });
         }
 
@@ -30,7 +30,7 @@ export const registerUser = async (req, res, next) => {
         const newUser = new User({
             email,
             password: hashedPassword,
-            nombre,
+            name,
             image
         });
 

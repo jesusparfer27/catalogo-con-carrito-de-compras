@@ -16,19 +16,49 @@ const connectDB = async () => {
 
 // Schema de Usuario
 const userSchema = new mongoose.Schema({
-    // username:String,
-    // email:String
-
-    password: {
+    
+    nombre: {
         type: String,
-        required: true,
+        required: true
+    },
+    contraseña: {
+        type: String,
+        required: true
+    },
+    edad: {
+        type: Number,
+        required: false
+    },
+    ciudad: {
+        type: String,
+        required: false
+    },
+    calle: {
+        type: String,
+        required: false
+    },
+    piso: {
+        type: Number,
+        required: false
+    },
+    datos_bancarios: {
+        type: Object,  // Esto es un campo genérico para datos bancarios, puedes ajustar el tipo si conoces la estructura exacta
+        required: false
+    },
+    palabra_de_seguridad: {
+        type: String,
+        required: false
     },
     email: {
         type: String,
-        unique: true,
-        required: true
+        required: true,
+        unique: true
     }
-})
+}, {
+    timestamps: true, // Crea los campos createdAt y updatedAt automáticamente
+    versionKey: false // Desactiva la versión del documento (__v)
+});
+
 
 const albumSchema = new mongoose.Schema({
     id: {
@@ -58,6 +88,10 @@ const albumSchema = new mongoose.Schema({
     songs: {
          type: Array,
           required: true }
+}, {
+    timestamps: true,
+    strict: false,
+    versionKey: false
 })
 
 // const adressSchema = new mongoose.Schema({
@@ -103,7 +137,7 @@ const albumSchema = new mongoose.Schema({
 
 // crear nuestros modelos
 
-const User = mongoose.model('User', userSchema);
+const User = mongoose.model('User', userSchema, 'user-panel');
 const Album = mongoose.model('Album', albumSchema)
 
 // se crearán automaticamente las COLECCIONES si no existen pero en minúsculas y plural

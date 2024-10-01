@@ -2,7 +2,6 @@ import dotenv from 'dotenv';
 
 // Creación de variable __dirname para usar carpeta public con vercel
 import path from 'path';
-
 export const __dirname = path.resolve()
 
 const result = dotenv.config();

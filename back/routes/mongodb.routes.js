@@ -4,10 +4,13 @@ import { getAllAlbums } from '../controllers/albums.controller.js';
 import { registerUser } from '../controllers/register.controller.js' 
 import { authenticateToken } from "../middlewares/auth.js";
 import { uploadFile } from '../controllers/uploads.controller.js'
+import { getUsers } from "../controllers/users.controller.js";
 
 const router = Router();
 
 router.get("/albums", getAllAlbums);
+router.get("/users", getUsers)
+
 router.post("/login", loginUser);
 router.post("/register", registerUser)
 router.post("/upload", uploadFile);
